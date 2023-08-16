@@ -53,15 +53,15 @@ for fn in os.listdir(aim_data_directory):
         print("b2 # samples", len(b2_raw))
 
         if f_id.startswith("NHC"):
-            b1_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/nhc_aim_csvs/%s_b1_AIM.csv' % (f_id))
-            music_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/nhc_aim_csvs/%s_mu_AIM.csv' % (f_id))
-            b2_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/nhc_aim_csvs/%s_b2_AIM.csv' % (f_id))
+            b1_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/nhc_aim_csvs/interval_csvs/%s_b1_AIM.csv' % (f_id))
+            music_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/nhc_aim_csvs/interval_csvs/%s_mu_AIM.csv' % (f_id))
+            b2_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/nhc_aim_csvs/interval_csvs/%s_b2_AIM.csv' % (f_id))
             clean_directory = r'C:/Users/kanwali/Box/MICU_AIM_data/Copy_NHC_AIM/nhc_clean_vmrk_vhdr'
             
         if f_id.startswith("ICM"):
-            b1_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/icm_aim_csvs/%s_b1_AIM.csv' % (f_id))
-            music_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/icm_aim_csvs/%s_mu_AIM.csv' % (f_id))
-            b2_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/icm_aim_csvs/%s_b2_AIM.csv' % (f_id))
+            b1_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/icm_aim_csvs/interval_csvs/%s_b1_AIM.csv' % (f_id))
+            music_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/icm_aim_csvs/interval_csvs/%s_mu_AIM.csv' % (f_id))
+            b2_raw.to_csv('C:/Users/kanwali/Box/MICU_AIM_data/icm_aim_csvs/interval_csvs/%s_b2_AIM.csv' % (f_id))
             clean_directory = r'C:/Users/kanwali/Box/MICU_AIM_data/Copy_ICM_AIM/icm_clean_vmrk_vhdr'
 
         # move respective ICM and NHC brainvision files to finished processing folder
